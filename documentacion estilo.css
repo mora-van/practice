@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600&family=Kaushan+Script&family=Parisienne&display=swap');
+
+body{
+    /*background: url("https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_960_720.jpg");*/
+    background: #f1eabd;
+    /*background-repeat: no-repeat;
+    background-size: cover;*/
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    /*font-family: 'Kaushan Script', cursive;
+    font-family: 'Parisienne', cursive;*/
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+/*Menu lateral*/
+#btn-menu{
+    display: none;
+}
+
+/* div.container-menu{
+    position: absolute;
+    background: #f1eabd;
+    width: 30%;
+    height: 100%;
+    top: 0;
+    left: 0; 
+}*/
+
+.container-menu{
+    position: absolute;
+    
+}
+
+/* .cont-menu{
+    width: 30%;
+    max-width: 150px;
+    height: 100%;
+    position: relative;
+} */
+
+/* .cont-menu nav{
+    transform: translateY(15%);
+}
+
+.cont-menu nav a{
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    border-left: 5px solid transparent;
+    transition: all 400ms ease;
+}
+
+.cont-menu nav a:hover{
+    border-left: 5px solid #000000;
+} */
+
+#navbar{
+    position: fixed;
+    min-width: 190px;
+    top: 0;
+    left: 0;
+    width: 190px;
+    height: 100%;
+    border-left: 5px solid transparent;
+    transition: all 400ms ease;
+    background: rgb(80, 74, 74); 
+    
+}
+
+.nav-link{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 190px;
+    height: 20;
+    padding: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    border-left: 5px solid transparent;
+}
+
+div.informacion{
+    margin-left: 200px;
+}

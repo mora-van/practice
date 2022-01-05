@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="doc estilo 2.css">
+    <title>HTML informacion</title>
+</head>
+<body>
+    <main id="main-doc">
+        <nav id="navbar">
+            <header class="contenido">Contenido</header>
+                <li><a class="nav-link" href="#HTML:_Lenguaje_de_etiquetas_de_hipertexto">HTML: Lenguaje de etiquetas de hipertexto</a></li>
+                <li><a class="nav-link" href="#Anatomía_de_un_elemento_HTML">Anatomía de un elemento HTML</a></li>
+                <li><a class="nav-link" href="#Anidar_elementos">Anidar elementos</a></li>
+                <li><a class="nav-link" href="#Elementos_vacíos">Elementos vacíos</a></li>
+                <li><a class="nav-link" href="#Anatomia_de_un_documento_HTML">Anatomia de un documento html</a></li>
+                <li><a class="nav-link" href="#Imagenes">Imagenes</a></li>
+                <li><a class="nav-link" href="#Marcado_de_texto">Marcado de texto</a></li>
+        </nav>
+    
+    
+        <section class="main-section" id="HTML:_Lenguaje_de_etiquetas_de_hipertexto">
+            <header class="title">HTML: Lenguaje de etiquetas de hipertexto</header>
+                <article>
+                    <p><strong>HTML</strong> (Lenguaje de Marcas de Hipertexto, del inglés HyperText Markup Language) es el componente más básico de la Web. Define el significado y la estructura del contenido web. Además de HTML, generalmente se utilizan otras tecnologías para describir la apariencia/presentación de una página web (CSS) o la funcionalidad/comportamiento (JavaScript).</p>
+                    <p>"Hipertexto" hace referencia a los enlaces que conectan páginas web entre sí, ya sea dentro de un único sitio web o entre sitios web. Los enlaces son un aspecto fundamental de la Web. Al subir contenido a Internet y vincularlo a las páginas creadas por otras personas, te conviertes en un participante activo en la «World Wide Web» (Red Informática Mundial).</p>
+                    <p>HTML utiliza "marcas" para etiquetar texto, imágenes y otro contenido para mostrarlo en un navegador Web. Las  marcas HTML incluyen "elementos" especiales como: 
+                        <ul>
+                            <li><strong> &lttitle&gt</li> <li>&ltbody&gt</li> <li>&ltheader&gt</li> <li>&ltfooter&gt</li> <li>&ltarticle&gt</li> <li>&ltsection&gt</li> <li>&ltp&gt</li> <li>&ltdiv&gt</li> <li>&ltspan&gt</li> <li>&ltimg&gt</li> <li>&ltaside&gt</li> <li>&ltaudio&gt</li> <li>&ltanvas&gt</li> <li>&ltdatalist&gt</li> <li>&ltdetails&gt</li> <li>&ltembed&gt</li> <li>&ltnav&gt</li> <li>&ltoutput&gt</li> <li>&ltprogress&gt</li> <li>&ltvideo&gt</li> <li>&ltul&gt</li> <li>&ltol&gt</li> <li>&ltli&gt</li> </strong>
+                        </ul>
+                    y muchos otros. </p>
+                    <p>Un elemento HTML se distingue de otro texto en un documento mediante "etiquetas", que consisten en el nombre del elemento rodeado por <strong>&lt</strong> y <strong>&gt </strong>. El nombre de un elemento dentro de una etiqueta no distingue entre mayúsculas y minúsculas. Es decir, se puede escribir en mayúsculas, minúsculas o una mezcla. Por ejemplo, la etiqueta title se puede escribir como Title, TITLEs o de cualquier otra forma.</p>
+                </article>
+        </section>
+
+        <section class="main-section" id="Anatomía_de_un_elemento_HTML">
+            <header class="title">Anatomía de un elemento HTML</header>
+                <p>Las partes principales del elemento son:</p>
+                    <ol>
+                        <li><strong> La etiqueta de apertura </strong>: consiste en el nombre del elemento (en este caso, p), encerrado por paréntesis angulares (< >) de apertura y cierre. Establece dónde comienza o empieza a tener efecto el elemento —en este caso, dónde es el comienzo del párrafo—.</li>
+                        <li><strong>La etiqueta de cierre </strong>: es igual que la etiqueta de apertura, excepto que incluye una barra de cierre (/) antes del nombre de la etiqueta. Establece dónde termina el elemento —en este caso dónde termina el párrafo—.</li>
+                        <li><strong>El contenido</strong>: este es el contenido del elemento, que en este caso es sólo texto.</li>
+                        <li><strong>El elemento</strong>: la etiqueta de apertura, más la etiqueta de cierre, más el contenido equivale al elemento.</li>
+                    </ol>
+                <p>Los atributos contienen información adicional acerca del elemento, la cual no quieres que aparezca en el contenido real del elemento. Aquí class es el nombre del atributo y editor-note el valor del atributo. En este caso, el atributo class permite darle al elemento un nombre identificativo, que se puede utilizar luego para apuntarle al elemento información de estilo y demás cosas.</p>
+                <p>Un atributo debe tener siempre:</p>
+                    <ol>
+                        <li>Un espacio entre este y el nombre del elemento (o del atributo previo, si el elemento ya posee uno o más atributos).</li>
+                        <li>El nombre del atributo, seguido por un signo de igual (=).</li>
+                        <li>Comillas de apertura y de cierre, encerrando el valor del atributo.</li>
+                    </ol>
+                <p>Los atributos siempre se incluyen en la etiqueta de apertura de un elemento, nunca en la de cierre.</p>
+        </section>
+
+        <section class="main-section" id="Anidar_elementos">
+            <header class="title">Anidar elementos</header>
+                <p>Puedes también colocar elementos dentro de otros elementos —esto se llama anidamiento—. Si, por ejemplo, quieres resaltar una palabra del texto (en el ejemplo la palabra «muy»), podemos encerrarla en un elemento &ltstrong&gt, que significa que dicha palabra se debe enfatizar:</p>
+
+                <p>&ltMi gato es &ltstrong&gt<strong>muy</strong>&lt/strong&gt gruñon.&lt/p&gt</p>
+    
+                <p>Los elementos deben abrirse y cerrarse ordenadamente, de forma tal que se encuentren claramente dentro o fuera el uno del otro. Si estos se encuentran solapados, el navegador web tratará de adivinar lo que intentas decirle, pero puede que obtengas resultados inesperados.</p>
+        </section>
+
+        <section class="main-section" id="Elementos_vacíos">
+            <header class="title">Elementos vacíos</header>
+                <p>Algunos elementos no poseen contenido, y son llamados elementos vacíos. Por ejemplo, el elemento &ltimg&gt de nuestro HTML:</p>
+                <p><pre><code>&ltimg src="images/firefox-icon.png" alt="Mi imagen de prueba"&gt</code></pre></p>
+                <p>Posee dos atributos, pero no hay etiqueta de cierre &lt/img&gt ni contenido encerrado. Esto es porque un elemento de imagen no encierra contenido al cual afectar. Su propósito es desplegar una imagen en la página HTML, en el lugar en que aparece.</p>
+        </section>
+
+        <section class="main-section" id="Anatomia_de_un_documento_HTML">
+            <header class="title">Anatomia de un documento HTML</header>
+                <p>Hasta ahora has visto lo básico de elementos HTML individuales, pero estos no son muy útiles por sí solos. Ahora verás cómo los elementos individuales son combinados para formar una página HTML entera. </p>
+                <pre><code>
+                    &lt!DOCTYPE html&gt
+                        &lthtml&gt
+                            &lthead&gt
+                                &ltmeta charset="utf-8"&gt
+                                &lttitle&gtMi página de prueba&lt/title&gt
+                            &lt/head&gt
+                            &ltbody&gt
+                                &ltimg src="imagenes/firefox-icon.png" alt="Mi imagen de prueba"&gt
+                            &lt/body&gt
+                        &lt/html&gt
+                </code></pre>
+
+                <!-- <img src="img/estructura html.PNG" alt="imagen estructura HTML"> -->
+                    <p>Se tiene:</p>
+                        <ul>
+                            <li>&lt!DOCTYPEhtml&gt el tipo de documento. Es un preámbulo requerido. Anteriormente, cuando HTML era joven (cerca de 1991/2), los tipos de documento actuaban como vínculos a un conjunto de reglas que el código HTML de la página debía seguir para ser considerado bueno, lo que podía significar la verificación automática de errores y algunas otras cosas de utilidad. Sin embargo, hoy día es simplemente un artefacto antiguo que a nadie le importa, pero que debe ser incluido para que todo funcione correctamente. Por ahora, eso es todo lo que necesitas saber.</li>
+                            <li>&lthtml&gt &lt/html&gtEste elemento encierra todo el contenido de la página entera y, a veces, se le conoce como el elemento raíz (root element).</li>
+                            <li>&lthead&gt &lt/head&gt — Este elemento actúa como un contenedor de todo aquello que quieres incluir en la página HTML que no es contenido visible por los visitantes de la página. Incluye cosas como palabras clave (keywords), una descripción de la página que quieres que aparezca en resultados de búsquedas, código CSS para dar estilo al contenido, declaraciones del juego de caracteres, etc.</li>
+                            <li>&ltmeta charset="utf-8"&gt — &ltmeta&gt. Este elemento establece el juego de caracteres que tu documento usará en utf-8, que incluye casi todos los caracteres de todos los idiomas humanos. Básicamente, puede manejar cualquier contenido de texto que puedas incluir. No hay razón para no establecerlo, y puede evitar problemas en el futuro.</li>
+                            <li>&lttitle&gt &lt/title&gt — el elemento establece el título de tu página, que es el título que aparece en la pestaña o en la barra de título del navegador cuando la página es cargada, y se usa para describir la página cuando es añadida a los marcadores o como favorita.</li>
+                            <li>&ltbody&gt &lt/body&gt — el elemento encierra todo el contenido que deseas mostrar a los usuarios web que visiten tu página, ya sea texto, imágenes, videos, juegos, pistas de audio reproducibles, y demás.</li>
+                        </ul>
+        </section>
+
+        <section class="main-section" id="Imagenes">
+            <header class="title">Imagenes</header>
+                <p>El elemento img incrusta una imagen en la página, en la posición en que aparece. Lo logra a través del atributo src (source), el cual contiene el path (ruta o ubicación) de tu archivo de imagen.</p>
+                <p>También se incluye un atributo alt (alternative) el cual contiene un texto que debería describir la imagen, y que podría ser accedido por usuarios que no pueden ver la imagen, quizás porque:</p>
+                    <ol>
+                        <li>Son ciegos o tienen deficiencias visuales. Los usuarios con impedimentos visuales usualmente utilizan herramientas llamadas Lectores de pantalla (Screen Readers), los cuales les leen el texto contenido en el atributo alt.</li>
+                        <li>Son ciegos o tienen deficiencias visuales. Los usuarios con impedimentos visuales usualmente utilizan herramientas llamadas Lectores de pantalla (Screen Readers), los cuales les leen el texto contenido en el atributo alt.</li>
+                    </ol>
+                <p>La frase clave acerca del texto alt de arriba es «texto que debería describir la imagen». El texto alt debe proporcionarle al lector la suficiente información como para que este tenga una buena idea de qué muestra la imagen. Por lo que tu texto actual «Mi imagen de prueba» no es para nada bueno. Un texto mucho mejor para el logo de Firefox sería: «El logo de Firefox: un zorro en llamas rodeando la Tierra».</p>
+        </section>
+
+        <section class="main-section" id="Marcado_de_texto">
+            <header class="title">Marcado de texto</header>
+                <p>Esta sección cubrirá algunos de los elementos HTML básicos que usarás para el marcado de texto.</p>
+
+                <h3>Encabezados</h3>
+                <p>Los elementos de encabezado permiten especificar que ciertas partes del contenido son encabezados, o subencabezados del contenido. De la misma forma que un libro tiene un título principal, y que a su vez puede tener títulos por cada capítulo individual, y subtítulos dentro de ellos, un documento HTML puede tenerlos también. HTML posee seis niveles de encabezados, &lth1&gt–&lth6&gt, aunque probablemente solo llegues a usar 3-4 como mucho:</p>
+                <img src="img/encabezado.PNG" alt="imagen estructura encabezado">
+    
+                <h3>Párrafos</h3>
+                <p>Los elementos &ltp&gt se utilizan para encerrar párrafos de texto; los usarás frecuentemente para el marcado de contenido de texto regular:</p>
+                <!-- <img src="img/parrafo.PNG" alt="imagen elemento parrafo"> -->
+                <pre><code>&ltp&gtEste es un simple parrafo&lt/p&gt</code></pre>
+    
+                <h3>Listas</h3>
+                <p>Mucho del contenido web está dado por listas, así que HTML tiene elementos especiales para ellas. El marcado de listas se realiza siempre en al menos dos elementos. Los dos tipos de listas más comunes son las listas ordenadas y las desordenadas:</p>
+                    <ol>
+                        <li><strong>Las listas desordenadas </strong>son aquellas en las que el orden de los items no es relevante, como en una lista de compras. Estas son encerradas en un elemento &ltul&gt (unordered list).</li>
+                        <li><strong>Las listas ordenadas </strong>son aquellas en las que el orden sí es relevante, como en una receta. Estas son encerradas en un elemento &ltol&gt (ordered list).</li>
+                    </ol>
+                <p>Cada elemento de la lista se coloca dentro de un elemento &ltli&gt (list item).</p>
+
+                <h3>Vínculos</h3>
+                <p>Los vínculos o enlaces son muy importantes —son los que hacen de la web, la web—. Para implementar un vínculo, necesitas usar un vínculo simple — &lta&gt — la a es la abreviatura de la palabra inglesa «anchor» («ancla»). Para convertir algún texto dentro de un párrafo en un vínculo, sigue estos pasos:</p>
+                    <ol>
+                        <li>Elige algún texto. Nosotros elegimos «Manifesto Mozilla».</li>
+                        <li>Encierra el texto en un elemento &lta&gt, así: </li>
+                        <pre><code>&lta&gtManifesto Mozilla&lt/a&gt</code></pre>
+                        <!-- <img src="img/vinculo.PNG" alt="estructura de un vinculo"> -->
+                        <li>Proporciónale al elemento &lta&gt un atributo href, así: </li>
+                        <pre><code>&lta href=""&gtManifesto Mozilla&lt/a&gt</code></pre>
+                        <!-- <img src="img/vinculo con atributo.PNG" alt="vinculo con atributo"> -->
+                        <li>Completa el valor de este atributo con la dirección web con la que quieras conectar al vínculo: </li>
+                        <pre><code>&lta href="https://www.mozilla.org/es-AR/about/manifesto/&gtManifesto Mozilla&lt/a&gt</code></pre>
+                    </ol>
+
+                <p>Podrías obtener resultados inesperados si al comienzo de la dirección web omites la parte https:// o http:// llamada protocolo. Así que luego del marcado del vínculo, haz clic en él para asegurarte que te dirige a la dirección deseada.</p>
+         </section>
+
+        <section class="Referencia">
+            <header class="title">Referencia</header>
+                <p>Toda la informacion recopilada en esta página se obtuvo de  <a href= "https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web/HTML_basics">MDN Web Docs</a></p>
+            </section>
+    </main>
+</body>
+</html>

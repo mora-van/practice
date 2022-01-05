@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600&family=Kaushan+Script&family=Parisienne&display=swap');
+
+body{
+    background: #f1eabd;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+#navbar{
+    position: fixed;
+    min-width: 190px;
+    top: 0;
+    left: 0;
+    width: 219px;
+    height: 100%;
+    border-left: 5px solid transparent;
+    transition: all 400ms ease;
+    background: rgb(80, 74, 74); 
+    }
+
+.nav-link{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 200px;
+    height: 20;
+    padding: 15px;
+    color: #ffffff;
+    text-decoration: none;
+    border-left: 5px solid transparent;
+    }
+
+.contenido{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 200px;
+    height: 20;
+    padding: 20px;
+    color: #ffffff;
+    font: size 1.5em;
+}    
+
+.main-section{
+    margin-left: 250px;
+}
+
+section.Referencia{
+    margin-left: 200px;
+}
+
+header a{
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.title{
+    font-size: 1.5em;
+    color: #505053; 
+   text-shadow: 1px 1px black;
+}
+
+h3 {
+    color: #505053; 
+}
+
+@media (max-width: 480px){
+    .nav-link{
+        border-left: 2px;
+    }
+}
